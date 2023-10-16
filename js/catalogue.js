@@ -2,7 +2,7 @@
 
 let dataSources = {
     "Mens Soles" : "https://migoy96.github.io/MP2/data/mensapi.js",
-    "Womens Soles" : "https://migoy96.github.io/MP2/data/womensapi.js",
+    "Womens Soles" : "https://migoy96.github.io/MP2/data/womenapi.js",
     "Kids Soles" : "https://migoy96.github.io/MP2/data/kidsapi.js",
     "Basketball Soles" : "https://migoy96.github.io/MP2/data/runningapi.js",
     "Running Soles" : "https://migoy96.github.io/MP2/data/basketballapi.js"
