@@ -78,13 +78,16 @@ function initialize() {
   
       if( fname == "" || lname == "" || mobnum == "" || bdate == "" || address == "" || city == "" || province == ""){
           alert('Please fill up required form');
+          return
       }
   
       if(!lbc.checked && !jt.checked && !lala.checked){
           alert('Please choose your Delivery Options');
+          return
         }
       if(!card.checked && !paypal.checked && !ewallet.checked && !cod.checked){
-        alert('Please choose your Payment Options');
+          alert('Please choose your Payment Options');
+          return
       }else{
         showModal();
         return;
