@@ -1,11 +1,11 @@
 // import { formatCurrency, user, showQuantity } from './utils.js';
 
 let dataSources = {
-    "Mens Soles" : "http://127.0.0.1:5500/data/mensapi.js",
-    "Womens Soles" : "http://127.0.0.1:5500/data/womenapi.js",
-    "Kids Soles" : "http://127.0.0.1:5500/data/kidsapi.js",
-    "Basketball Soles" : "http://127.0.0.1:5500/data/basketballapi.js",
-    "Running Soles" : "http://127.0.0.1:5500/data/runningapi.js"
+    "Mens Soles" : "https://migoy96.github.io/MP2/data/mensapi.js",
+    "Womens Soles" : "https://migoy96.github.io/MP2/data/womensapi.js",
+    "Kids Soles" : "https://migoy96.github.io/MP2/data/kidsapi.js",
+    "Basketball Soles" : "https://migoy96.github.io/MP2/data/basketballapi.jss",
+    "Running Soles" : "https://migoy96.github.io/MP2/data/runningapi.js"
 }
 
 function catalogueTitles(){
