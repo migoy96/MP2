@@ -25,28 +25,60 @@
         </div>  
     </nav>
 
-
     <center>
-        <div class="loginContainer container">
-            <header>
-                <h1 id="title">Airborne Sole</h1>
-            </header>
-            <div class="container">
-                <h2 class="label">Log-In</h2>
-        
-                    <label for="username" class="font"><i class="fa-solid fa-user"></i></label>
-                    <input autocomplete="off" type="text" name="username" class="input_box" id="username" placeholder="Input your Username Here*" required>
-                    <br>
-                    <label for="password" class="font"><i class="fa-solid fa-lock"></i></label>
-                    <input type="password" name="password" id="password" class="input_box" placeholder="Input your Password Here (atleast 10 characters)*" required>
-                    <br>
-                    <p id="register">Don't Have an Account Yet? <a href="" id="register2">Register Here</a></p>
-                    <button type="submit" class="button" onclick="login()">LogIn</button>
-            
+        <h1 style="font-family: 'Blanka', sans-serif; margin-top: 80px; margin-bottom: 50px;">AirBorne Soles</h1>
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2>Login</h2>
+                <div id="loginError"></div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user" style="color: #000000;"></i></span>
+                    <input type="text" name="username" id="log_username">
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock" style="color: #000000;"></i></span>
+                    <input type="password" name="password" id="log_password">
+                    <label>Password</label>
+                </div>
+                <div class="remember1">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#" class="forgot">Forgot Password?</a>
+                </div>
+                <button class="button" onclick="loginUser()">Login</button>
+                <div class="registerhere">
+                    <p>Don't have an account? <a href="#" class="reglink">Register Here</a></p>
+                </div>
             </div>
 
-        </div>
+            <div class="form-box register">
+                <h2>Register</h2>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope" style="color: #000000;"></i></span>
+                    <input type="email" name="email" id="email" autocomplete="off">
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user" style="color: #000000;"></i></span>
+                    <input type="text" name="username" id="reg_username">
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock" style="color: #000000;"></i></span>
+                    <input type="password" name="password" id="reg_password">
+                    <label>Password</label>
+                </div>
+                <div class="remember2">
+                    <label><input type="checkbox" class="terms"> I agree to terms & conditions</label>
+                </div>
+                <button class="button" onclick="registerUser()">Register</button>
+                <div class="registerhere">
+                    <p>Already have an account? <a href="#" class="loglink">Login</a></p>
+                </div>
+            </div>
+       </div>
     </center>
+   
     
 
     <script src="js/login.js"></script>

@@ -129,7 +129,7 @@ function user(){
     if(name) {
         name.forEach(
             (username) => {
-                startName = ` Hi ${username.email}`;
+                startName = ` Hi ${username.username}`;
             }
         )
     }

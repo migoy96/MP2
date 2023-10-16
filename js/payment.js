@@ -86,13 +86,13 @@ function initialize() {
       if(!card.checked && !paypal.checked && !ewallet.checked && !cod.checked){
         alert('Please choose your Payment Options');
       }else{
-        showModal("YOUR PAID");
+        showModal();
         return;
       }
 
 }
 
-function showModal(message) {
+function showModal() {
   const modal = document.getElementById('myModal');
   modal.style.display = 'block';
 }
