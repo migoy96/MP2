@@ -66,7 +66,7 @@ function del(id){
 }
 
 function initialize() {
-    let url = `http://127.0.0.1:5500/data/checkoutItemapi.js`;
+    let url = `https://migoy96.github.io/MP2/data/checkoutItemapi.js`;
     fetch(url)
     .then(response => response.json())  //object fetching
     .then(result => {
