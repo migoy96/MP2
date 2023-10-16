@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="caroussel/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/blanka" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>AirBorne Soles - Homes</title>
+</head>
+<body>
+
+        <!-- start of navbar -->
+
+        <nav class="navbar navbar-expand-xl bg-dark-subtle mb-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">AIRBORNE SOLES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item nav_item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown nav_item">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item category" data-key="Mens Soles">Mens Soles</a></li>
+                  <li><a class="dropdown-item category" data-key="Womens Soles">Womens Soles</a></li>
+                  <li><a class="dropdown-item category" data-key="Kids Soles">Kids Soles</a></li>
+                  <li><a class="dropdown-item category" data-key="Basketball Soles">Basketball Soles</a></li>
+                  <li><a class="dropdown-item category" data-key="Running Soles">Running Soles</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item nav_item">
+                  <a class="nav-link" aria-current="page" href="myorder.html">My Order</a>
+                </li>
+                <li class="nav-item nav_item">
+                  <a class="nav-link">About Us</a>
+                </li>
+              </ul>
+              
+              <ul class="navbar-nav">
+                  <li class="nav-item nav_item"><a class="nav-item"><i class="fa-solid fa-user loginBtn" onclick="loginBtn()"></i></a><span id="loginName"></span></li>
+                  <li class="nav-item nav_item"><a href="checkout.html" class="nav-item"><i class="fa-solid fa-cart-shopping cartBtn"></i><span id="quantity"></span></i></a></li>
+                  <li class="nav-item nav_item"><span id="logoutBtn"></span></li>
+               </ul>
+            </div>
+          </div>
+        </nav>
+<!-- end of nav -->
+
+      <!-- start of caroussel/banner -->
+      <section id="shopUs">
+        <h4>Step into Style</h4>
+        <h2>Discover</h2>
+        <h1>AirBorne Soles Today!</h1>
+        <a href=""><button>Shop on us Now!</button></a>
+      </section>
+
+      <!-- featured items -->
+
+      <div class="featDescription">
+        <h1>VARIETY OF SOLES</h1>
+        <p>For the Pleasure of your Souls </p>
+      </div>
+      
+      <div id="gender">
+        <div id="mens">
+          <div id="mensdescrip">
+            <h4>Mens Soles</h4>
+            <p>Sole to Soul Comfort</p>
+            <a><button class="category" data-key="Mens" >Shop on Us!</button></a>
+          </div>
+        </div>
+
+        <div id="womens">
+          <div id="womensdescrip">
+            <h4>Womens Soles</h4>
+            <p>Step into Comfort</p>
+            <a><button button class="category" data-key="Womens">Shop on Us!</button></a>
+          </div>
+        </div>
+
+        <div id="kids">
+          <div id="kidsdescrip">
+            <h4>Kids Soles</h4>
+            <p>Tiny Feet, Mighty Soles</p>
+            <a><button button class="category" data-key="Kids">Shop on Us!</button></a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="banner2">
+        <h3>Sale on Selected Item</h3>
+        <h5>Up to 50%</h5>
+      </div>
+
+      <div class="featDescription">
+        <h1>KICKS ON SALE</h1>
+        <p>Grab yours Now!</p>
+      </div>
+
+      <!-- cards in carousel using bootstrap -->
+
+      <div id="carouselExample" class="carousel carousel-dark slide d-none d-sm-block">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+           <div class="cards-wrapper">
+             <div class="card">
+                <img src="basketball shoes/air jordan legacy 312.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Air Jordan Legacy 312</h5>
+                  <p>Basketball Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Basketball">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="basketball shoes/air jordan XXXVIII fiba.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Air Jordan XXXVIII Fiba</h5>
+                  <p>Basketball Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Basketball">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="basketball shoes/gt jump 2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GT Jump 2</h5>
+                  <p>Basketball Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Basketball">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="basketball shoes/jordan 1 take 4 pf.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jordan 1 Take 4</h5>
+                  <p>Basketball Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Basketball">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="basketball shoes/jordan stay loyal 3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jordan Stay Loyal 3</h5>
+                  <p>Basketball Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Basketball">See More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="cards-wrapper" id="cardSale2">
+              <div class="card">
+                <img src="running shoes/nike alphafly 2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Alphafly 2</h5>
+                  <p>Running Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Running">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="running shoes/nike infinity rn-4.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Infinity RN-4</h5>
+                  <p>Running Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Running">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="running shoes/nike pegasus 40.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Pegasus 40</h5>
+                  <p>Running Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Running">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="running shoes/nike pegasus turbo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Pegasus Turbo</h5>
+                  <p>Running Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Running">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="running shoes/nike zoom fly 5.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Zoom Fly 5</h5>
+                  <p>Running Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Running">See More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="cards-wrapper" id="cardSale3">
+             <div class="card">
+                <img src="womens nike/air adjust force.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Air Adjust Force</h5>
+                  <p>Womens Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Womens">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="womens nike/blazer low 77 jumbo.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Blazer Low 77</h5>
+                  <p>Womens Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Womens">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="mens nike/nike p-6000.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike P-6000</h5>
+                  <p>Mens Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Mens">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="mens nike/air force 1 07 lv8.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Air Force 1 '07 LV8</h5>
+                  <p>Mens Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Mens">See More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="kids nike/nike downshifter.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike DownShifter</h5>
+                  <p>Kids Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Kids">See More</a>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- carousel for small screen -->
+
+      <div id="carouselExampleControlsSmallScreen" class="carousel carousel-dark slide d-sm-none">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <img src="basketball shoes/air jordan legacy 312.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Air Jordan Legacy 312</h5>
+                  <p>Basketball Shoes</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Basketball">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="basketball shoes/air jordan XXXVIII fiba.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Air Jordan XXXVIII Fiba</h5>
+                  <p>Basketball Shoes</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Basketball">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="basketball shoes/gt jump 2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GT Jump 2</h5>
+                  <p>Basketball Shoes</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Basketball">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="basketball shoes/jordan 1 take 4 pf.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jordan 1 Take 4</h5>
+                  <p>Basketball Shoes</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Basketball">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="basketball shoes/jordan stay loyal 3.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jordan Stay Loyal 3</h5>
+                <p>Basketball Shoes</p>
+                <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                <a class="btn btn-primary category" data-key="Basketball">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="running shoes/nike alphafly 2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Alphafly 2</h5>
+                  <p>Running Shoes</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Running">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="running shoes/nike infinity rn-4.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Infinity RN-4</h5>
+                  <p>Running Shoes</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Running">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="running shoes/nike pegasus 40.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Pegasus 40</h5>
+                  <p>Running Shoes</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Running">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="running shoes/nike pegasus turbo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Pegasus Turbo</h5>
+                  <p>Running Shoes</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Running">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="running shoes/nike zoom fly 5.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Zoom Fly 5</h5>
+                  <p>Running Shoes</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Running">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="womens nike/air adjust force.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Air Adjust Force</h5>
+                  <p>Womens Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Womens">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="womens nike/blazer low 77 jumbo.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Blazer Low 77</h5>
+                  <p>Womens Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Womens">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="mens nike/nike p-6000.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike P-6000</h5>
+                  <p>Mens Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Mens">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="mens nike/air force 1 07 lv8.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Air Force 1 '07 LV8</h5>
+                  <p>Mens Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Mens">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="kids nike/nike downshifter.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nike DownShifter</h5>
+                  <p>Kids Soles</p>
+                  <p class="card-text"><span class="discount">&#8369; 5,499</span> <br> <span class="discounted">&#8369; 4,999</span></p>
+                  <a class="btn btn-primary category" data-key="Kids">See More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsSmallScreen" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsSmallScreen" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+      <!-- start of footer -->
+
+      <footer>
+        <div class="col">
+          <a href="index.html" class="navbar-brand" style="margin-bottom: 30px;"><p>AIRBORNE SOLES</p></a>
+          <h4>Contact</h4>
+          <p><strong>Address: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p><strong>Phone: </strong>(02)1234-5689 / +639123456789</p>
+          <div class="socmed">
+            <h4>Follow Us:</h4>
+            <div class="socicon">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <h4>About</h4>
+          <a href="about.html">About Us</a>
+          <a href="product.html">All Products</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Contact Us</a>
+        </div>
+    
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="">View Cart</a>
+          <a href="">My Wishlist</a>
+          <a href="">Track My Order</a>
+          <a href="">Help</a>
+        </div>
+    
+        <div class="col">
+          <h4>Payment Options</h4>
+          <div class="payment">
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-paypal"></i>
+            <i class="fa-brands fa-google-pay"></i>
+          </div>
+          <br><br><br>
+          <p id="location"></p>
+      </footer>
+    
+      <div class="copyright">
+        <p>&copy; 2023 - AirBorne Soles</p>
+      </div>
+      
+      
+    
+
+   
+    <script src="js/index.js"></script>
+</body>
+</html>
