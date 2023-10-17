@@ -16,16 +16,17 @@ loginLink.addEventListener('click', () => {
 function registerUser(){
     let newUsername = document.getElementById("reg_username").value;
     let newPassword = document.getElementById("reg_password").value;
+    let error = document.getElementById("registerError");
     let newUser = {
         username: newUsername,
         password: newPassword
     }
 
     if(newUsername == null || newUsername == ""){
-        alert(`Please fill up all required details`);
+        error.innerHTML = `Please fill up your email credentials`;
         return
     }if(newPassword == null || newPassword == ""){
-        alert(`Please fill up all required details`);
+        error.innerHTML = `Please fill up your password credentials`;
         return
     }else{
         login_array.push(newUser);
