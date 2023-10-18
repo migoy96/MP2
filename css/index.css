@@ -7,31 +7,41 @@
 body{
     font-family: 'League Spartan', sans-serif;
     min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* navbar styling */
 
 
+
 .navbar{
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: radial-gradient(white,grey);
 }
 
+
+
 .navbar-brand{
-    font-family: 'Blanka', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .nav_item{
     margin-left: 30px;
-    font-size: 18px;
 }
 
 .nav-item a{
     color: rgb(15, 15, 15);
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .nav-item a:hover{
-    font-weight: 500;
+    color: #f00;
+    font-weight: bolder;
 }
 
 .form-control{
@@ -39,21 +49,21 @@ body{
 }
 
 .loginBtn{
-    color: rgb(173, 173, 173);
+    color: black;
     transition: 0.3s ease;
 }
 
 .loginBtn:hover{
-    color: black;
+    color: #f00;
 }
 
 .cartBtn{
-    color: rgb(173, 173, 173);
+    color: black;
     transition: 0.3s ease;
 }
 
 .cartBtn:hover{
-    color: black;
+    color: red;
 }
 
 #quantity{
@@ -65,14 +75,6 @@ body{
 }
 
 
-
-.card{
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.card:hover{
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-}
 
 .category{
     cursor: pointer;
@@ -399,78 +401,194 @@ body{
 
 
 /* footer styling */
+.round-btn {display: inline;height: 40px; width: 40px; background:#fff;border-radius: 50%;float: left;margin: 15px 8px;box-shadow: 2px 2px 5px 0px rgb(82, 0, 67);border: 1px solid;/*border: 1px solid #622657;*/}
+.round-btn a {display: block !important;padding: 7px 12px;font-size: 18px;border-radius: 50%;}
+.round-btn .icon {padding: 3px;}
+.round-btn .icon img{height: 24px; width: 32px;margin-top: 6px;}
+.btn-facebook a {color: #3b5998;padding: 8px 13px;}
+.btn-linkedin a {color: #007bb6;}
+.btn-twitter a{color: #1c9deb;}
+.btn-instagram a{color: #dd3f5c;}
+.btn-whatsapp a{color: #155E54;}
+.btn-envelop a{color: #D6403A;font-size: 15px; padding: 9px 12px;}
+.standard_header .standard_social_links {margin-left: 1rem;}
 
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  /*footer */
+
+  .footer-wrap {
+    padding-top: 43px;
+    background-size: cover;
 }
 
-
-footer .col{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    margin-right: 50px;
-    margin-left: 50px;
+.footer-wrap h3 {
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
-footer .logo_footer{
-    margin-bottom: 30px;
+.footer-wrap p {
+    font-size: 13px;
+    line-height: 24px;
+    color: black;
+    margin-top: 15px;
 }
 
-footer h4{
-    font-size: 19px;
-    font-weight: 700;
-    padding-bottom: 20px;
-}
+.footer-wrap p a {
+    color: black;
+    text-decoration: underline;
+    font-style: italic;
 
-footer p{
-    font-size: 18px;
-    margin: 0 0 8px 0;
 }
-
-footer a{
-    font-size: 16px;
+.footer-links li a {
+    font-size: 13px;
+    line-height: 30px;
+    color:black;
     text-decoration: none;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-footer a:hover{
-    color: #a0a0a0;
-}
-
-footer .socmed{
-    margin-top: 20px;
-}
-
-footer .socmed i{
-    font-size: 25px;
-    color: #465b52;
-    padding-right: 4px;
-    cursor: pointer;
-}
-
-footer .payment i{
-    font-size: 25px;
-    color: #465b52;
-    padding-right: 4px;
 }
 
 
+.footer-links li:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    padding-right: 10px;
+    color: black;
+}
 
-.copyright{
+.footer-category li a {
+    font-size: 13px;
+    line-height: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer-category li:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    padding-right: 10px;
+    color:black;
+}
+
+.address {
+
+    color: black;
+    font-size: 14px;
+    position: relative;
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+.address:before {
+    content: "f277";
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info a {
+
+    color:black;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.fa-phone:before {
+    content: "\f095";
+}
+
+.info a {
+
+    color: black;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.fa-fax:before {
+    content: "\f1ac";
+}
+
+.copyright {
+    
+    border-top: 1px solid #111;
+    font-size: 14px;
+    color:white;
+    padding-top: 3px;
     text-align: center;
-    background-color: rgb(26, 26, 26);
-    margin-bottom: -20px;
+    padding-bottom: 3px;
+    background: rgb(46, 46, 46);
+    
+}
+footer .second_class{
+    border-bottom: 1px solid #444;
+    padding-bottom: 25px;
+}
+footer .first_class {
+    padding-bottom: 21px;
+    border-bottom: 1px solid #444;
+}
+footer .first_class p, footer .first_class h3{
+    margin: 0 0;
+
+}
+footer{
+    background: radial-gradient(white,grey);
 }
 
-.copyright p{
-    color: white;
-    font-style: oblique;
+footer .newsletter input[type="text"] {
+    width: 100%;
+    background: #fff;
+    color: #333;
+    border: 1px solid #222;
+    padding: 14px 20px;
+    border-radius: 50px;
+    margin-top: 12px;
 }
+
+.newsletter .newsletter_submit_btn {
+    background: #fff;
+    position: absolute;
+    right: 30px;
+    border: 0;
+    top: 26px;
+    font-size: 17px;
+    color: #333;
+}
+
+
+footer .second_class_bdr{
+    padding-top: 25px;
+    border-top:1px solid #222;
+}
+
+footer .btn-facebook a {
+    padding: 6px 14px !important;
+}
+
+footer .btn-envelop a {
+    color: #D6403A;
+    font-size: 15px;
+    padding: 12px 12px;
+}
+
+footer .round-btn a {
+    padding: 6px 12px;
+}
+
+footer .round-btn {
+    box-shadow: 2px 2px 5px 0px #222 !important;}
+
+footer .round-btn {
+    margin: 15px 4px;}
+
+footer dl, ol, ul {
+    padding-left: 5px;
+}
+  footer li{
+    list-style: none;
+  }
 
 
 
