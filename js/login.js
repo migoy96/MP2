@@ -23,10 +23,10 @@ function registerUser(){
     }
 
     if(newUsername == null || newUsername == ""){
-        error.innerHTML = `Please fill up your email credentials`;
+        error.innerHTML = `<b style="font-size: 14pt;">Please fill up your email and username</b>`;
         return
     }if(newPassword == null || newPassword == ""){
-        error.innerHTML = `Please fill up your password credentials`;
+        error.innerHTML = `<b style="font-size: 14pt;">Please fill up your password</b>`;
         return
     }else{
         login_array.push(newUser);
@@ -44,16 +44,30 @@ function loginUser(){
     let error = document.getElementById("loginError");
 
     if(newArray == null || newArray == ""){
-        error.innerHTML = `Please register to Log-in`;
+        error.innerHTML = `<b style="font-size: 14pt;">Please register to Log-in</b>`;
     }
     
     if(username != newArray[0].username || username.length != newArray[0].username.length){
-        error.innerHTML = `Username doesn't match`;
+        error.innerHTML = `<b style="font-size: 14pt;">Username doesn't match</b>`;
         return
     }if(password != newArray[0].password || password.length != newArray[0].password.length){
-        error.innerHTML = `Password doesn't match`;
+        error.innerHTML = `<b style="font-size: 14pt;">Password doesn't match</b>`;
         return
     }else{
         window.location.href = "catalogue.html";
     }
 }
+
+function showUsername(){
+    let array = JSON.parse(sessionStorage.getItem("login"));
+    let username = document.getElementById("log_username");
+
+    if(array == null || array == ""){
+        username.value = "";
+    }else{
+        username.value = `${(array[0].username)}`;
+    }
+    
+}
+
+showUsername();
