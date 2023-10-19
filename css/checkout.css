@@ -35,11 +35,11 @@ body{
     color: rgb(15, 15, 15);
     font-weight: bolder;
     font-size: larger;
+    transition: 0.4s ease;
 }
 
 .nav-item a:hover{
-    color: #f00;
-    font-weight: bolder;
+    color: rgb(80, 80, 80);
 }
 
 .form-control{
@@ -48,20 +48,20 @@ body{
 
 .loginBtn{
     color: black;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .loginBtn:hover{
-    color: #f00;
+    color: rgb(80, 80, 80);
 }
 
 .cartBtn{
     color: black;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .cartBtn:hover{
-    color: red;
+    color: rgb(80, 80, 80);
 }
 
 #quantity{
@@ -121,6 +121,7 @@ body{
 .edit_btn:hover{
     color: #3f3f3f;
 }
+
 
 #arrivalDate{
     font-size: 18px;

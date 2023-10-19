@@ -37,8 +37,9 @@ body{
 }
 
 .nav-item a:hover{
-    color: #f00;
+    color: rgb(80, 80, 80);
     font-weight: bolder;
+    transition: 0.4s ease;
 }
 
 .form-control{
@@ -47,20 +48,20 @@ body{
 
 .loginBtn{
     color: black;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .loginBtn:hover{
-    color: #f00;
+    color: rgb(80, 80, 80);
 }
 
 .cartBtn{
     color: black;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .cartBtn:hover{
-    color: red;
+    color: rgb(80, 80, 80);
 }
 
 #quantity{
@@ -83,13 +84,14 @@ body{
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     margin-top: 30px;
-    padding-left: 50px;
+    padding-left: 70px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .card{
     box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+    width: 15rem;
 }
 
 .card:hover{
@@ -309,6 +311,18 @@ footer dl, ol, ul {
   }
 
 
+@media (max-width:1450px){
+    .card{
+        width: 23%;
+    }
+
+    #cards{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 25px;
+    }
+}
+
 @media (max-width:1024px){
 
 
@@ -320,6 +334,15 @@ footer dl, ol, ul {
         margin-bottom: 25px;
     }
 
+    .card{
+        width: 40%;
+    }
+
+    #cards{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 100px;
+    }
 
 }
 
@@ -336,7 +359,22 @@ footer dl, ol, ul {
         margin-bottom: 25px;
     }
 
+    .card{
+        width: 40%;
+    }
 
+    #cards{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 100px;
+    }
+
+    .ads{
+        margin-bottom: 10px;
+        width: 100%;
+        height: 550px;
+    
+    }
 }
 
 @media (max-width:430px){
@@ -352,6 +390,12 @@ footer dl, ol, ul {
         margin-bottom: 25px;
     }
 
+    .card{
+        width: 100%;
+    }
 
+    #cards{
+        padding: 30px;
+    }
 
 }

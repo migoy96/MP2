@@ -12,8 +12,6 @@ body{
 
 /* navbar styling */
 
-
-
 .navbar{
     position: relative;
     top: 0;
@@ -37,10 +35,11 @@ body{
     color: rgb(15, 15, 15);
     font-weight: bolder;
     font-size: larger;
+    transition: 0.4s ease;
 }
 
 .nav-item a:hover{
-    color: #f00;
+    color: rgb(80, 80, 80);
     font-weight: bolder;
 }
 
@@ -50,20 +49,20 @@ body{
 
 .loginBtn{
     color: black;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .loginBtn:hover{
-    color: #f00;
+    color: rgb(80, 80, 80);
 }
 
 .cartBtn{
     color: black;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .cartBtn:hover{
-    color: red;
+    color: rgb(80, 80, 80);
 }
 
 #quantity{
@@ -196,19 +195,21 @@ body{
 }
 
 #mensdescrip button{
+    color: white;
     border: 0px;
-    background-color: rgba(214, 210, 210, 0.01);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     padding: 8px;
     font-size: 25px;
     font-weight: 600;
     transition: 0.8s ease;
-    text-decoration: underline;
+    
 }
 
 #mensdescrip button:hover{
-    color: whitesmoke;
-    background-color: rgba(77, 77, 77, 0.5);
+    color: rgb(165, 165, 165);
+    background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
 }
 
 /* womens selection */
@@ -251,19 +252,21 @@ body{
 }
 
 #womensdescrip button{
+    color: #fff;
     border: 0px;
-    background-color: rgba(214, 210, 210, 0.01);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     padding: 8px;
     font-size: 25px;
     font-weight: 600;
     transition: 0.8s ease;
-    text-decoration: underline;
+    
 }
 
 #womensdescrip button:hover{
-    color: whitesmoke;
-    background-color: rgba(77, 77, 77, 0.5);
+    color: rgb(165, 165, 165);
+    background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
 }
 
 /* kids selection */
@@ -307,18 +310,20 @@ body{
 
 #kidsdescrip button{
     border: 0px;
-    background-color: rgba(214, 210, 210, 0.01);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     padding: 8px;
     font-size: 25px;
     font-weight: 600;
     transition: 0.8s ease;
-    text-decoration: underline;
+    
 }
 
 #kidsdescrip button:hover{
-    color: whitesmoke;
-    background-color: rgba(77, 77, 77, 0.5);
+    color: rgb(165, 165, 165);
+    background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
 }
 
 /* sales banner 50%off */
