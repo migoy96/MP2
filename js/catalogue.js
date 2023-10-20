@@ -19,22 +19,32 @@ let shoes = [];
 
 function addToCart(index){
     let logIn = JSON.parse(sessionStorage.getItem("login"));
+    //reference to current shoe
+        let shoe = shoes[index];
+        let itemArray = JSON.parse(localStorage.getItem("order"));
+        let orderList = itemArray || [];
+
 
     if(logIn == null){
         alert(`Please Log-In to proceed your order.`);
         window.location.replace("login.html");
     }else{
-        //reference to current shoe
-        let shoe = shoes[index];
-        let itemArray = JSON.parse(localStorage.getItem("order"));
-        let orderList = itemArray || [];
-
         orderList.push({id: shoe.id, product: shoe.product, price: shoe.price, img: shoe.img, category: shoe.category});
         localStorage.setItem("order", JSON.stringify(orderList));
         showQuantity();
+        showModal();
     }    
 }
 
+function showModal(){
+    let modal = document.getElementById("addedModal");
+    modal.style.display = "block";
+}
+
+function closeModal(){
+    let modal = document.getElementById("addedModal");
+    modal.style.display = "none";
+}
 
 
 function initialize() {
