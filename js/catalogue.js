@@ -58,33 +58,14 @@ function initialize() {
         let cards = "";
         let cardsArea = document.getElementById("cards");
         result.forEach((shoe, index) => {
-            cards += `<div class="card d-inline-flex m-2" style="width: 15rem;">
+            cards += `<div class="card d-inline-flex m-2">
                     <img src="${shoe.img}" id="image${shoe.id}" class="card-img-top" alt="${shoe.product}">
                     <div class="card-body">
                     <h5 class="card-title fs-6 fw-bolder" id="product${shoe.id}">${shoe.product}</h5>
                     <p class="card-text" id="price${shoe.id}">${formatCurrency(shoe.price, "php")}</p>
-
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="${shoe.id}" onclick="addToCart(${index})">
-                    Add to Cart
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header bg-secondary-subtle">
-                                    <h1 class="modal-title fs-3 fw-bold" id="exampleModalLabel">ADDED TO CART</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body" style="font-size: 18px; font-weight: 500;">
-                                    Your Item is Added to Your Cart!
-                                </div>
-                            </div>
-                        </div>
+                    <a class="btn btn-secondary" id="${shoe.id}" onclick="addToCart(${index})">Add to Cart</a>
                     </div>
-                </div>
-            </div>`
+                    </div>`
         });
         cardsArea.innerHTML = cards;
     })
