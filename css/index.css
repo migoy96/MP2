@@ -605,15 +605,15 @@ footer dl, ol, ul {
 @media (max-width:1440px){
 
     #mensdescrip {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     #womensdescrip {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     #kidsdescrip {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 }
 
