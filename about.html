@@ -36,37 +36,6 @@
 
 <body>
 
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "134604286399605");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v18.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-
         <!-- start of navbar -->
 
         <div>
@@ -166,18 +135,17 @@
                     <center><img src="caroussel/imgcreator.jpg" class="card-img-top" alt="creator" style="border-radius: 50%;width: 250px; height: 250px;"></center>
                     <div class="card-body">
                       <h5 class="card-title">Miguel Carlos Blancaflor</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text">"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</p>
                       
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 mb-5">
-                  <div class="card w-100" >
-                    <img src="..." class="card-img-top" alt="...">
+                  <div class="card w-100 pt-3" >
+                    <center><img src="caroussel/imgcreator2.jpg" class="card-img-top" alt="creator" style="border-radius: 50%;width: 250px; height: 250px;"></center>
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Mark Jay Albao</h5>
+                      <p class="card-text">"The harder you work for something, the greater you'll feel when you achieve it." - Unknown</p>
                     </div>
                   </div>
                 </div>
