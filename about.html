@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>About Us</title>
+    <!-- Favicon-->
+    <link href="css/about.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="caroussel/newfavicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/blanka" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+        <!-- start of navbar -->
+
+        <div>
+          <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+              <div><a class="navbar-brand" href="index.html" style="font-family: 'Blanka', sans-serif;">AirBorne Soles</a></div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item nav_item">
+                    <a class="nav-link" aria-current="page" href="index.html"><i class='bx bxs-home-smile'></i>Home</a>
+                  </li>
+                  <li class="nav-item dropdown nav_item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false"><i class='bx bxs-category'></i>Products</a>
+      
+      
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item category" data-key="Mens Soles">Mens Soles</a></li>
+                      <li><a class="dropdown-item category" data-key="Womens Soles">Womens Soles</a></li>
+                      <li><a class="dropdown-item category" data-key="Kids Soles">Kids Soles</a></li>
+                      <li><a class="dropdown-item category" data-key="Basketball Soles">Basketball Soles</a></li>
+                      <li><a class="dropdown-item category" data-key="Running Soles">Running Soles</a></li>
+                      <li>
+                    </ul>
+                  </li>
+                  <li class="nav-item nav_item">
+                    <a class="nav-link" href="myorder.html"><i class='bx bx-basket'></i>My Order</a>
+                  </li>
+                  <li class="nav-item nav_item">
+                    <a class="nav-link" href="about.html"><i class='bx bxs-book-reader'></i>About</a>
+                  </li>
+                </ul>
+                <hr>
+                <ul class="navbar-nav">
+                  <li class="nav-item nav_item"><a href="checkout.html" class="nav-item"><i
+                        class="fa-solid fa-cart-shopping cartBtn"></i><span id="quantity"></span></i></a></li>
+                  <li class="nav-item nav_item"><a class="nav-item" onclick="loginBtn()"><i
+                        class="fa-solid fa-user loginBtn"></i></a><span id="loginName"></span></li>
+                  <li class="nav-item nav_item"><span id="logoutBtn"></span></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div>
+<!-- end of nav -->
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="caroussel/creator 900x400.jpg"
+                        alt="..." /></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">About Us</h1>
+                    <p>Nike, Inc. is an American multinational association that is involved in the design, development,
+                        manufacturing and worldwide marketing and sales of apparel, footwear, accessories, equipment and
+                        services. The company’s world headquarters are situated near Beaverton, Oregon, in the Portland
+                        metropolitan area (USA). It is a major producer of sports equipment and one of the world’s
+                        largest suppliers of athletic shoes and apparel.!</p>
+
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">Mission</h1>
+                    <p>BRING INSPIRATION AND INNOVATION TO EVERY ATHLETE IN THE WORLD If you have a body, you are an
+                        athlete.
+                        We champion continual progress for athletes and sport by taking action to help athletes reach
+                        their potential. Every job at NIKE, Inc. is grounded in a team-first mindset, cultivating a
+                        culture of innovation and a shared purpose to leave an enduring impact.
+                    </p>
+
+                </div>
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="caroussel/hq.jpg"..." />
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="caroussel/vision.jpg" alt="..." />
+                </div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">Vission</h1>
+                    <p>to bring inspiration and innovation to every athlete in the world.” While its mission statement
+                        is to “do everything possible to expand human potential!</p>
+
+                </div>
+            </div>
+
+
+
+            <!-- Call to Action-->
+            <div class="card text-white bg-secondary my-5 py-4 text-center">
+                <div class="card-body">
+                    <p class="text-white m-0">This WEB Page Created By Group 4!</p>
+                </div>
+            </div>
+            <!-- Content Row-->
+            <div class="row gx-6 gx-lg-5">
+                <div class="col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Card One</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni
+                                quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Card Three</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni
+                                quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+         <!-- start of footer -->
+
+      <div>
+        <footer class="container-fluid">
+          <div class="footer-wrap">
+            <div class="container first_class">
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <h3>BE THE FIRST TO KNOW</h3>
+                  <p>Get all the latest information on AirBorne Soles.</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <form class="newsletter">
+                    <input type="text" placeholder="Email Address">
+                    <button class="newsletter_submit_btn" type="submit"></i></button>
+                  </form>
+  
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="col-md-12">
+                    <div class="standard_social_links">
+                      <div>
+                        <li class="round-btn btn-facebook"><a href="https://www.facebook.com/profile.php?id=61551496782274"><i
+                              class="fab fa-facebook-f"></i></a>
+  
+                        </li>
+  
+                        <li class="round-btn btn-twitter"><a href="https://twitter.com/"><i class="fab fa-twitter"
+                              aria-hidden="true"></i></a>
+  
+                        </li>
+                        <li class="round-btn btn-instagram"><a href="https://www.instagram.com/"><i
+                              class="fab fa-instagram" aria-hidden="true"></i></a>
+  
+                        </li>
+                        <li class="round-btn btn-envelop"><a href="https://mail.google.com/"><i class="fa fa-envelope"
+                              aria-hidden="true"></i></a>
+  
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-md-12">
+                    <h3 style="text-align: center;">Stay Connected</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="second_class">
+              <div class="container second_class_bdr">
+                <div class="row">
+                  <div class="col-md-4 col-sm-6">
+  
+                    <div class="footer-logo" style="font-family: 'Blanka', sans-serif; font-size: 16pt; font-weight: 600;">AirBorne Soles
+                    </div>
+                    <p>Number 1 online shop for shoes of your choice. </p>
+                  </div>
+                  <div class="col-md-2 col-sm-6">
+                    <h3>Quick LInks</h3>
+                    <ul class="footer-links">
+                      <li><a href="index.html">Home</a>
+                      </li>
+                      <li><a href="catalogue.html">Products</a>
+                      </li>
+                      <li><a href="myorder.html">My Order</a>
+                      </li>
+                      <li><a href="about.html">About us</a>
+                      </li>
+  
+  
+                    </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <h3>Help Center</h3>
+                    <ul class="footer-category">
+                      </li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="about.html">Contact Us</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <h3>Contact and Email</h3>
+                    <ul class="footer-links">
+                      <li class="text-dark">872-223-6789 | 872-345-6784
+                      </li>
+                      <li class="text-dark">Email : abcdjkl@hotmail.com
+                      </li>
+                      <div id="location"></div>
+                    </ul>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="copyright">
+          Copyright 2020 | All Rights Reserved by WD83P kodego.
+        </div>
+      </div>
+    </div>
+
+   
+    <script src="js/index.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+</body>
+
+</html>
